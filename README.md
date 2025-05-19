@@ -15,10 +15,6 @@ A Flutter application for **in-app screen recording** and **video playback**. Us
 - 📱 Beautiful gradient UI
 - 🚫 Avoids recording system UI or other apps
 
-## 📸 Screenshots
-
-*(Add screenshots here if needed)*
-
 ## 📦 Dependencies
 
 - [`flutter_bloc`](https://pub.dev/packages/flutter_bloc)
