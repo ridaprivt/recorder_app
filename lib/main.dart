@@ -4,6 +4,7 @@ import 'package:record_app/bloc/playback/playback_bloc.dart';
 import 'package:record_app/bloc/playback/playback_event.dart';
 import 'package:record_app/bloc/recording/recording_bloc.dart';
 import 'package:record_app/screens/recording_screen.dart';
+import 'package:record_app/services/recording_service.dart';
 
 import 'package:responsive_sizer/responsive_sizer.dart';
 
@@ -24,7 +25,7 @@ class RecordApp extends StatelessWidget {
               create: (_) => PlaybackBloc()..add(LoadRecordedVideos()),
             ),
             BlocProvider<RecordingBloc>(
-              create: (_) => RecordingBloc(),
+              create: (_) => RecordingBloc(RecordingService()),
             ),
           ],
           child: MaterialApp(
